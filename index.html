@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moj Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 class="fade-in">Moj Portfolio</h1>
+    <p class="subtitle fade-in">Petra Mihaljević</p>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>O meni</h2>
+      <p>Bok! Ja sam studentica na Grafičkom fakultetu.
+      Ova stranica prikazuje neke od mojih radova.</p>
+    </section>
+
+    <section class="gallery">
+      <h2>Galerija</h2>
+      <div class="image-grid">
+        <img src="images/photo1.jpeg" alt="Fotografija 1">
+        <img src="images/photo2.jpg" alt="Fotografija 2">
+        <img src="images/photo3.JPG" alt="Fotografija 3">
+        <img src="images/photo4.JPG" alt="Fotografija 4">
+      </div>
+    </section>
+
+
+    <section class="table-section">
+      <h2>Pregled mojih radova</h2>
+      <p>U tablici su prikazane neke informacije o njima.</p>
+
+      <table class="project-table">
+        <thead>
+          <tr>
+            <th rowspan="2">NAZIV</th>
+            <th colspan="2">DETALJI</th>
+            <th rowspan="2">VRIJEME UREOŠENO U RAD</th>
+          </tr>
+          <tr>
+            <th>VRSTA</th>
+            <th>OPIS</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Mrav i podmornica</td>
+            <td>Digitalni crtež</td>
+            <td>Ilustracija za prijatelja</td>
+            <td>8h 21min</td>
+          </tr>
+          <tr>
+            <td>Wassily stolica</td>
+            <td>Tradicionalni crtež</td>
+            <td>Rad za mapu za faks</td>
+            <td>4h</td>
+          </tr>
+          <tr>
+            <td>777</td>
+            <td>Digitalni crtež</td>
+            <td>Eksperimentiranje sa tabletom</td>
+            <td>2h 30min</td>
+          </tr>
+          <tr>
+            <td>Windswept Adan</td>
+            <td>Digitalni crtež</td>
+            <td>Alternativni album cover za Ichiko Aobin album Windswept Adan</td>
+            <td>3h 51min</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="feedback">
+      <h2>Povratne informacije</h2>
+      <p>Imaš komentar ili mišljenje o mom radu? Podijeli ga ispod — voljela bih čuti tvoje mišljenje.</p>
+      
+      <form>
+        <fieldset>
+          <legend>Ostavi svoj komentar</legend>
+
+          <label for="ime">Ime</label>
+          <input type="text" id="ime" name="ime" placeholder="Tvoje ime">
+
+          <label for="reakcija">Tvoja reakcija</label>
+          <select id="reakcija" name="reakcija">
+            <option value="inspirirano">Inspirirano</option>
+            <option value="znatizeljno">Znatiželjno</option>
+            <option value="neutralno">Neutralno</option>
+          </select>
+
+          <label for="komentar">Komentar</label>
+          <input list="brziKomentari" id="komentar" name="komentar" placeholder="Upiši ili odaberi komentar">
+          <datalist id="brziKomentari">
+            <option value="Odličan stil!"></option>
+            <option value="Sviđa mi se raspored i boje"></option>
+            <option value="Zanimljiv koncept"></option>
+          </datalist>
+
+          <button type="submit">Pošalji</button>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+</body>
+</html>
